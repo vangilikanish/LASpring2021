@@ -7,7 +7,15 @@ public class rec4{
         */
 
         //CODE HERE:
-       
+        /*
+        int age = Integer.parseInt(args[0]);
+        //If they are 18 or older they can vote 
+        if(age>=18){
+            System.out.println("You can vote");
+        } else if(age<18){
+            System.out.println("You can't vote");
+        }
+        */
         
         /*
         Speeding Tickets
@@ -20,7 +28,18 @@ public class rec4{
         */
 
         //CODE HERE:
-        
+        /*
+        int speed = Integer.parseInt(args[0]); 
+        if (speed <= 60) {
+            System.out.println("no fine");
+        } else if (speed <= 75) {
+            System.out.println("$100 fine");
+        } else if (speed <= 90) {
+            System.out.println("$200 fine");
+        } else {
+            System.out.println("$500 fine");
+        }
+        */
 
         /*
         Horizontal Pyramid
@@ -38,7 +57,19 @@ public class rec4{
         */
 
         //CODE HERE:
-        
+        int n = Integer.parseInt(args[0]);
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        } 
+        for(int i = n-1; i > 0; i--){
+            for(int j = 0; j < i; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
 
         /*
         Prime?
