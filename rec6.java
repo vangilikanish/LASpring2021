@@ -9,12 +9,25 @@ public class rec6 {
         Once the user guesses correctly, have the program output "You win!"
         All input and output must be done using StdIn and StdOut libraries.
         */
-        StdOut.println("Enter a number: ");
 
-        //read number from user using StdIn
-        int n = StdIn.readInt();
-        
-        //print the number back to the user
-        StdOut.println("you entered: " + n); 
+        /*
+        Problem: Drawing an Equilateral Triangle
+        Promt: A principal property of an equilateral triangle of sides a, b, and c (where a = b = c) defines the height from any side to be: 
+        Write a program that uses StdDraw to draw an equilateral triangle with sides of length 1.
+        */
+
+        /*
+        Problem: Drawing Shapes
+        Prompt: Using StdDraw methods, write a program that draws the following on the 1x1 plane:
+        non-filled square
+        filled square with the words "white text" inside of it
+        non-filled circle
+        filled polygon with 4 vertices
+        */
+
+        /*
+        Problem: Nested circles:
+        Promt: Write a program that reads an integer number n from the command line and draws n circles with alternative colored circles nested in each other. 
+        */
     }
 }
