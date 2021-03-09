@@ -1,28 +1,28 @@
 public class rec7 {
     public static void main(String[] args){
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
-    }      
-
+        int size = Integer.parseInt(args[0]);
+        //int f = printTable(size);
+        
+    }   
+    
     /*
     public static double avg(double a, double b){
-
+        double gg = 2.0;
+        return gg;
     }
 
-    public static boolean adult(String n, int age){
-
+    public static boolean age(int a, String b){
+        return true;
     }
 
-    public static String nameMaker(String first, String last){
-
-    }
+    public static String name(String a, String b){ }
     */
 
     /*
-    public static boolean isPower(int n){
+    public static boolean isPower3(int n){
         if(n==0) return false;
-        while(n != 1){
-            if(n % 3 != 0) return false; 
+        while(n!=1){
+            if(n % 3 != 0) return false;
             n = n/3;
         }
         return true;
@@ -34,15 +34,13 @@ public class rec7 {
     Question: Write a method, printTable, which takes an integer as an argument, and prints a multiplication table of that size. 
     */
     //CODE:
-    public static int printTable(int a){
-        int[][] table = new int[a][a];
-        
-            for (int i = 0; i < a ; i++){
-                for (int j = 0; j < a; j++){
-                    table[i][j]= (i+1)*(j+1);
-                }
+    public static void printTable(int a){
+        for(int i = 1; i <= a; i++){
+            for(int j = 1; j <= a; j++){
+                System.out.print(j*i + "\t");
             }
-        return table;
+            System.out.println();
+        }
     }
     
     /*
@@ -56,15 +54,7 @@ public class rec7 {
     Ex: numerator = 9, denominator = 12; output: “3/4”
     */
     //CODE:
-    public static int gcf(int a, int b){
-    int f = 0;
-    for(int i = 1; i <= a; i++){
-        if ( a % i == 0 && b % i ==0)
-            {
-            return i; 
-            }
-        }    
-    }
+    
 
     /*
     Problem: Prime
@@ -72,17 +62,12 @@ public class rec7 {
     Write a method, isPrime, which takes an integer as a parameter, which will return true if the given number is prime. 
     */
     //CODE:
-    public static boolean isPrime(int n)
-    {
-        int x = n - 1; 
-        boolean y = true;
-        while(x != 1)
+    public static boolean isPrime(int n){
+        for(int i = 2; i < n; i++)
         {
-            if(n % x == 0){
-                y = false; 
-            }
-           x--;  
+            if (n % i == 0)
+                return false;
         }
-        return y; 
+        return true;
     }
 }
