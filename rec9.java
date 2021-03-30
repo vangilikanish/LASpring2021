@@ -1,6 +1,10 @@
 public class rec9 {
     public static void main(String[] args){
-
+        String s1 = new String("Bob");
+        String s2 = new String("OtTo");
+        String s3 = new String("nolemon");
+        String s4 = new String("no melon");
+        boolean pal = palindrome(s1);
     }
     /*
     Problem 1:
@@ -12,8 +16,17 @@ public class rec9 {
     s.charAt(i) 
     */
 
+    public static boolean palindrome(String s)
+    {
+        s = s.toLowerCase();
+        s = s.replaceAll(" ", "");
 
-
+        if ()
+        {
+            return true;
+        }
+        else return false;
+    }
     /*
     Problem 2:
     Write a recursive method, isPalindrome, which takes a String as a parameter, and returns true if the String is a palindrome.
@@ -22,6 +35,31 @@ public class rec9 {
     s.length()
     s.substring(b, e)
     */
+    public static boolean ispalindrome(String a){
+       if(a.length()==0 || a.length()== 1){
+           return true;
+       }
+       if(a.charAt(0)== a.charAt(a.length()-1)){
+           return ispalindrome(a.substring(1, a.length()-1));
+       }
+       return false;
+    }
+
+    public static boolean isPalindrome(String s){
+        if(s == null || s.length() == 0)
+        return true;
+        if(s.length() == 1) 
+        return true; 
+        
+        char firstLetter = s.charAt(0);
+        char lastLetter = s.charAt(s.length() - 1); 
+        
+        if(firstLetter != lastLetter)
+        return false; 
+        String newString = s.substring(1, s.length() - 1); 
+        return isPalindrome(newString); 
+    }
+    
     
     
 
@@ -30,7 +68,29 @@ public class rec9 {
     An anagram is a rearrangement of the letters of a word to form a new word. For example, an anagram of "listen" is "silent".
     Write a method, anagram, that takes a String as input, and returns true if it is an anagram.
     */
-    
+    public static boolean anagram(String a, String b)
+    {
+        if (a.length() != b.length()) {
+            return false;
+        }
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        char string1[] = a.toCharArray();
+        char string2[] = b.toCharArray();
+        int blacklist[] = new int[a.length()];
+        for (int i = 0; i < a.length(); i++)
+        {
+            for(int j = 0; j < b.length(); j++)
+            {
+                if (string1[i] == string2[j])
+                {
+                    
+                    
+
+                }
+            }
+        }
+    }
       
 
     /*
