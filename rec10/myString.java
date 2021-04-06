@@ -15,5 +15,8 @@ print(); print the data;
 
 public class myString {
     
+    //initializing variables
+    private int size;
+    private char[] string; 
     
 }

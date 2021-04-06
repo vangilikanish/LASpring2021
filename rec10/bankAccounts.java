@@ -15,7 +15,34 @@ In another file, create a simple test drive class that creates an instance of yo
 executes the sequences you came up with in part 3, and display the results.
 */
 
-public class bankAccounts {
+public class bankAccounts { 
+    
+private double balance;
+    bankAccounts()
+    {
+        balance = 0;
+    }
+    public static void setBalance(double balance)
+    {
+        this.balance = balance;
+    }
+    public static void depositMoney(double deposit)
+    {
+        balance += deposit;
+    }
+    public static void withdrawlMoney(double withdrawl)
+    {
+        if (balance <= 0)
+        {
+            System.out.println("No money to withdraw");
+        }
+        else
+            balance -= withdrawl;
+    }
+    public double getBalance()
+    {
+        return balance;
 
- 
-}
+
+
+} 
