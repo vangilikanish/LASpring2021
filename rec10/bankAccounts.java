@@ -17,56 +17,5 @@ executes the sequences you came up with in part 3, and display the results.
 
 public class bankAccounts {
 
-    private String accountNumber;
-    private String routingNumber;
-    public String customerName;
-    private String customerAddress;
-    private double accountBalance;
-    
-    bankAccounts(String account, String routing, String name, String address, double balance) {
-        accountNumber = account;
-        //..etc.
-    }
-
-    // We can also add setting functions for both accountNumber and routingNumber
-    // to set a random seed, but I think that might be overkill. I think we're done?
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public String getRoutingNumber() {
-        return routingNumber;
-    }
-
-    public double getBalance() {
-        return accountBalance;
-    }
-
-    public void deposit(double amount) {
-        accountBalance += amount;
-    }
-
-    public void withdraw(double amount) {
-        if (accountBalance >= amount) {
-            accountBalance -= amount;
-        } else {
-            System.out.println("Please enter a valid withdrawal amount.");
-        }
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void updateCustomerName(String name) {
-        this.customerName = name;
-    }
-
-    public String getCustomerAddress() {
-        return customerAddress;
-    }
-
-    public void updateCustomerAddress(String address) {
-        this.customerAddress = address;
-    }
+ 
 }
