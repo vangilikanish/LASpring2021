@@ -22,10 +22,10 @@ public class rec11 {
         CS
         111
         Recitation
-        
+
         What is the Big-O running time of your algorithm?
-        Answer: O(n)
-        Code: ?
+        Answer: 
+        Code:
         */
 
         /*
@@ -36,7 +36,7 @@ public class rec11 {
                 System.out.println(array[i]);
             }
         }​
-        Answer: O(n^2) because there are two nested for loops, each iterating through n elements.
+        Answer: 
 
         int[] array = ... // Create an array
         for(int i = 0; i < array.length; i ++){
@@ -44,23 +44,16 @@ public class rec11 {
                 System.out.println(array[i]);
             }
         }
-        Answer: O(n) because only one loop iterates over n elements, the other loop iterates through 10 elements, which is a constant that get's dropped.
+        Answer:
 
         Complete the following method which would return the index of x in a given array using sequential search; if number is not found, return -1:
-        public static int sequentialSearch(int[] arr, int x) {
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] == x) {
-                    return i;
-                }
-            }
-            return -1;
-        }
+        public static int sequentialSearch(int[] arr, int x)
 
         Trace the method above for finding the number 1 in [15, 2, 8, 1, 17, 5]:
 
 
-        How many total comparisons were made?: 4 comparisons
-        What is the best case, worst case, and big O?: O(1) best case (target is the first element), O(n) worse case (target is last element), big-O is O(n).
+        How many total comparisons were made?: 
+        What is the best case, worst case, and big O?:
         */
 
         /*
